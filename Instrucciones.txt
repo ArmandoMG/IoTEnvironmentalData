@@ -1,0 +1,13 @@
+MQTT_Json.py: Archivo de Python con el cual enviamos datos al topico del equipo "f1004b/e1". Estos
+datos seran enviados por medio de 2 funciones. La primer funcion sera la de "envia" la cual permite
+al usuario enviar un dato desde un sensor especifico. La otra funcion sera la de "procesa", la cual
+enviara datos cada 5 segundos para que nuestra base de datos la reciba. Esto seria como una 
+simulacion de tener sensores en la vida real.
+
+Reto_Script_Mysql.txt: Archivo txt que tiene el query con el que creamos nuestra base de datos.
+
+Charter y Gant.pdf: Archivo pdf que tiene nuestro charter y la liga a nuestro workspace de Monday.com
+donde esta nuesrtra planificacion del proyecto.
+
+mqtt_esp8266_Base3.ino: Archivo utilizado para las placas de arduino; para que estas prendan los 
+sensores y lean informacion del mundo real.

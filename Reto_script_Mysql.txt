@@ -1,0 +1,45 @@
+USE	reto_iot;
+
+BEGIN;
+CREATE TABLE Ubicacion (
+	roomID CHAR(5),
+	nombre VARCHAR(25),
+	residente VARCHAR(25),
+	PRIMARY KEY (roomID)
+);
+
+CREATE TABLE Sensor (
+	sensorID CHAR(5),
+	tipo VARCHAR(25),
+	roomID CHAR(5),
+	PRIMARY KEY (sensorID),
+	FOREIGN KEY (roomID) REFERENCES Ubicacion(roomID)
+);
+
+CREATE TABLE Lectura (
+	lecturaID CHAR(5),
+	dato DECIMAL(10,2),
+	fecha DATETIME,
+	sensorID CHAR(5),
+	PRIMARY KEY (lecturaID),
+	FOREIGN KEY (sensorID) REFERENCES Sensor(sensorID)
+);
+
+INSERT INTO Ubicacion VALUES('CS000', 'Cuarto_Sergio', 'Sergio López');
+INSERT INTO Ubicacion VALUES('CA000', 'Cuarto_Armando', 'Armando Montaño');
+INSERT INTO Ubicacion VALUES('CR000', 'Cuarto_Ricardo', 'Ricardo Rodríguez');
+INSERT INTO Ubicacion VALUES('CM000', 'Cuarto_Mizael', 'Mizael Beltrán');
+INSERT INTO Ubicacion VALUES('CO000', 'Cuarto_Oscar', 'Oscar Bastidas');
+
+INSERT INTO Sensor VALUES('ST000', 'Temperatura', 'CS000');
+INSERT INTO Sensor VALUES('SH000', 'Humedad', 'CS000');
+INSERT INTO Sensor VALUES('ST001', 'Temperatura', 'CA000');
+INSERT INTO Sensor VALUES('SH001', 'Humedad', 'CA000');
+INSERT INTO Sensor VALUES('ST002', 'Temperatura', 'CR000');
+INSERT INTO Sensor VALUES('SH002', 'Humedad', 'CR000');
+INSERT INTO Sensor VALUES('ST003', 'Temperatura', 'CM000');
+INSERT INTO Sensor VALUES('SH003', 'Humedad', 'CM000');
+INSERT INTO Sensor VALUES('ST004', 'Temperatura', 'CO000');
+INSERT INTO Sensor VALUES('SH004', 'Humedad', 'CO000');
+
+COMMIT;
