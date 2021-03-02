@@ -21,5 +21,5 @@ simulation of having sensors in real life.
 
 Reto_Script_Mysql.txt: txt file containing the SQL query used to create our database
 
-mqtt_esp8266_Base3.ino: Archivo utilizado para las placas de arduino; para que estas prendan los 
-sensores y lean informacion del mundo real.
+mqtt_esp8266_Base3.ino: File used for arduino boards; so that these turn on the
+sensors and read information from the real world.
