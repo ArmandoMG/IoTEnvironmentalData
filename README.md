@@ -1,7 +1,7 @@
 # IoTEnvironmentalData
 Repo for my Internet of Things Project where I obtained real environmental data and saved it in a database
 
-## Colaborators
+### Colaborators
 Sergio Lopez Urzaiz A00827462
 
 Ricardo Rodriguez Rodriguez A01283165
@@ -12,7 +12,7 @@ Armando Montaño Gonzalez A00827377
 
 Oscar Adrian Bastidas Garzon A01741581
 
-
+### Instructions
 MQTT_Json.py: Python file with which we send data to the topic "f1004b/e1". These
 data will be sent through 2 functions. The first function will be the "send" which allows
 to the user to send a data from a specific sensor. The other function will be the one of "processes", which
