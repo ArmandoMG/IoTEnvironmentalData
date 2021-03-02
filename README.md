@@ -23,3 +23,13 @@ Reto_Script_Mysql.txt: txt file containing the SQL query used to create our data
 
 mqtt_esp8266_Base3.ino: File used for arduino boards; so that these turn on the
 sensors and read information from the real world.
+
+### Dashboard
+![image](https://user-images.githubusercontent.com/24629475/109723092-dda10800-7b6a-11eb-801e-1e38014c0825.png)
+
+![image](https://user-images.githubusercontent.com/24629475/109723126-e8f43380-7b6a-11eb-884b-957f078e3659.png)
+
+![image](https://user-images.githubusercontent.com/24629475/109723176-f7424f80-7b6a-11eb-86da-c9ecb2892165.png)
+
+![image](https://user-images.githubusercontent.com/24629475/109723224-04f7d500-7b6b-11eb-8aae-b1c67630c7e7.png)
+
