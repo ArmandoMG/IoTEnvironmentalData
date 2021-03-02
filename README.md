@@ -1,6 +1,10 @@
 # IoTEnvironmentalData
 Repo for my Internet of Things Project where I obtained real environmental data and saved it in a database for further data analysis
 
+### Problem Explanation
+
+Design and implement a prototype of a digital system capable of obtaining real physical data (Temperature in this case)through the use of sensors, processing it and depositing it as information on an internet platform, for its subsequent analysis and visualization.
+
 ### Colaborators
 Sergio Lopez Urzaiz A00827462
 
